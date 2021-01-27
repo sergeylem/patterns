@@ -1,22 +1,22 @@
 import { IAdd, IRemove } from "./interfaces";
 
-export class Balans implements IAdd, IRemove {
-  private balans: number = 0;
+export class Balance implements IAdd, IRemove {
+  private balance: number = 0;
 
   constructor() { }
 
-  // constructor(balans: number) {
-  //   this.balans = balans;
+  // constructor(balance: number) {
+  //   this.balance = balance;
   // }
 
   public add(email: string, m: number): number {
     console.log(`Here is implementation of add operation`);
-    return this.balans += m;
+    return this.balance += m;
   }
 
   public remove(email: string, m: number): number {
     console.log(`Here is implementation of remove operation`);
-    return this.balans -= m;
+    return this.balance -= m;
   }
 
 }

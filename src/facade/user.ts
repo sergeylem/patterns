@@ -13,8 +13,8 @@ export class User {
   // }
   
   public getUserByEmail(email: string):string {
-    console.log(`We are finding user by email:${email}`);
-    // Suppose we found User
+// Suppose we have found User and return info of the user
+    console.log(`The operation of the user: ${email}`);
     return `user: ${this.name} email:${this.email} age:${this.age}`;
   }
 
